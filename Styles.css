@@ -1,10 +1,111 @@
+/* =========THIS ONE BELOW IS MY FAVOURITE BECAUSE IT MAKES IT ALL SMOOTH!====== */
+html{
+    scroll-behavior: smooth;
+  }
+   /* ======== THAT'S IT ====== */
+   
+  
+   /* =================  THIS IS WHERE THE NAVIGATIOIN SECTION START ================== */
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+      background-color: rgb(104, 144, 163);
+      overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+      float: left;
+      color: #f3f3f7;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+      background-color: #625F63;
+      color: rgb(104, 144, 163);
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+      background-color: rgb(8, 8, 8);
+      color: white;
+  }
+   /* =================  THIS IS WHERE THE NAVIGATION SECTION ENDS ================== */
+  
+  
+   /* =================  THIS IS WHERE THE HEAD SECTION START ============ */
+  
+   body {
+      height: auto;
+      /* background-color: cadetblue;
+       */
+      background-image: url("http://www.inn.spb.ru/images/000/DSC100035763.jpg");
+  
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+  
+      body {
+      font-family: 'Architects Daughter';
+      font-size: 20px;
+  }
+  
+  h1 {
+    font-size: 90px;
+    font-family: "Edwardian Script ITC", sans-serif;
+    color: rgb(104, 144, 163);
+  }
+    
+    .bg-image {
+      /* The image used */
+    
+      /* Add the blur effect */
+      filter: blur(20px);
+      -webkit-filter: blur(2px);
+    
+      /* Full height */
+      height: auto; 
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    /* Position text in the middle of the page/image */
+    .bg-text {
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+      color: rgb(104, 144, 163);
+      font-weight: bold;
+      border: 3px solid rgb(104, 144, 163);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
 
-                        /*  ==========  THIS IS WHERE THE "ABOUT PAGE" STYLES START  ============ */
+
+
+     /* =================  THIS IS WHERE THE HEAD SECTION END ============ */
+
+                       
+                       
+                       
+                       /*  ==========  THIS IS WHERE THE "ABOUT PAGE" STYLES START  ============ */
 
 /* =================  THIS IS WHERE THE NAVIGATIOIN SECTION START ================== */
-  body{
-    background-color: #4F6D7A;
-  }
+
   /* Add a black background color to the top navigation */
   .topnav {
       background-color: rgb(104, 144, 163);
@@ -189,9 +290,7 @@
 
 /* ========== THIS IS WHERE THE NAV-SECTIION STARTS ========== */
 
-body{
-    background-color: #4F6D7A;
-  }
+
   /* Add a black background color to the top navigation */
   .topnav {
       background-color: rgb(104, 144, 163);
@@ -242,9 +341,6 @@ body{
     
   }
 
-* {
-    box-sizing: border-box;
-  }
 /* ========== THIS IS WHERE THE BODY SECTION STYLING STARTS ========= */
 Í
 
@@ -311,11 +407,6 @@ body{
 
                         /*  ==========  THIS IS WHERE THE "CONTACT PAGE" STYLES START  ============ */
 
-body{
-    background-color: #4F6D7A;
-  }
-   /* ======== THAT'S IT ====== */
-   
 
    /* =================  THIS IS WHERE THE NAVIGATIOIN SECTION START ================== */
   
@@ -395,4 +486,57 @@ body{
  
  /* ========= THIS IS THE END OF THE BODY SECTION FOR THE "CONTACT PAGE" ======== */
 
-                        /*  ==========  THIS IS WHERE THE "CONTACT PAGE" STYLES ENDS  ============ */
+                        /* ==========  THIS IS WHERE THE "CONTACT PAGE" STYLES ENDS  ============  */
+
+
+     @media screen and (max-width:600px){
+      #abt1{
+         font-size: 1em;
+       }
+       .slideshow-container{
+         display: grid;
+         grid-template-columns: 1fr;
+         
+         
+       }
+       
+       .round{
+        margin: 19%;
+       }
+       body{
+         margin-left: 0;
+         margin-right: 0;
+       }
+       .content{
+         margin-left: 0;
+         margin-top: 0;
+       }
+       .container_carousel{
+         margin: 0;
+         
+       }
+     }
+
+     @media screen and (max-width: 1200px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    display: block;
+
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: inherit;
+    right: 0;
+    top: 0;
+    color: white;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  
+  }
+}
